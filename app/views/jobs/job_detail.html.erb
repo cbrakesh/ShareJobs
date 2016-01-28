@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
+<%job=Job.find_by_id(params[:job_id])%>
+<h2><%=job.JobTitle%> | <%= job.CityName%>,<%= job.CountryName%></h2>
+</html>
