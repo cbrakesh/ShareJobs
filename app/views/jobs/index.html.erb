@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="text-align: center"></align><h2>List of Jobs</h2></div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Company Name</th>
+      <th>Job Title</th>
+      <th>Job ID</th>
+      <th>Job Type</th>
+      <th>MinExp</th>
+      <th>MaxExp</th>
+      <th>CityName</th>
+      <th>CountryName</th>
+      <th>ContactEmail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%for each_job in @jobs%>
+        <tr>
+            <td><%=each_job.ContactCompany%></td>
+            <td><%=each_job.JobTitle%></td>
+            <td><%=each_job.JobDID%></td>
+            <td><%=each_job.JobType%></td>
+            <td><%=each_job.MinExp%></td>
+            <td><%=each_job.MaxExp%></td>
+            <td><%=each_job.CityName%></td>
+            <td><%=each_job.CountryName%></td>
+            <td><%=each_job.ContactEmail%></td>
+        </tr>
+    <%end%>
+  </tbody>
+</table>
+
+</html>
