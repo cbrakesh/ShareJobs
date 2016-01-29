@@ -1,5 +1,33 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<%job=Job.find_by_id(params[:job_id])%>
-<h2><%=job.JobTitle%> | <%= job.CityName%>,<%= job.CountryName%></h2>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You are being redirected to your url</title>
+  <!-- facebook -->
+  <meta property="og:site_name" content="http://www.careerbuilder.com/"/>
+  <meta property="og:title" content="I got an A. Take this quiz and see what you get.">
+  <meta property="og:description" content="Your knowledge practically makes you royalty.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="http://www.underconsideration.com/brandnew/archives/careerbuilder_logo_detail.png" />
+  <meta property="og:url" content="http://127.0.0.1:3000/jobs/<%= @job.id %>/job_detail">
+
+  <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+</head>
+
+<h2><%= @job.JobTitle%> | <%= @job.CityName%>,<%= @job.CountryName%></h2>
+</br>
+<% if current_user %>
+<span class='st_sharethis_large' displayText='ShareThis'></span></br>
+<% end %>
+<div style="border-style: groove;">
+<span style="font-size: 25px;"><b>Description:</b></span></br>
+</div>
+<%= raw @job.JobDesc %>
+</br>
+</br>
+<div style="border-style: groove;">
+<span style="font-size: 25px;"><b>Requirement:</b></span></br>
+</div>
+<%= raw @job.JobReq %>
 </html>

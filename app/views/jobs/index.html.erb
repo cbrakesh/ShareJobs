@@ -19,7 +19,7 @@
     <%for each_job in @jobs%>
         <tr>
             <td><%=each_job.ContactCompany%></td>
-            <td><%=each_job.JobTitle%></td>
+            <td><%= link_to each_job.JobTitle, job_job_detail_path(each_job.id)%></td>
             <td><%=each_job.JobDID%></td>
             <td><%=each_job.JobType%></td>
             <td><%=each_job.MinExp%></td>

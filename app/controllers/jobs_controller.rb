@@ -4,6 +4,11 @@ class JobsController < ApplicationController
   end
 
   def job_detail
+    @job=Job.find(params[:job_id])
+  end
+
+  def social_sites
 
   end
+
 end
