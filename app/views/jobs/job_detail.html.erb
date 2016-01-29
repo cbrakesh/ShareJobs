@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>You are being redirected to your url</title>
   <!-- facebook -->
-  <meta property="og:site_name" content="http://www.careerbuilder.com/"/>
-  <meta property="og:title" content="I got an A. Take this quiz and see what you get.">
-  <meta property="og:description" content="Your knowledge practically makes you royalty.">
-  <meta property="og:type" content="article">
-  <meta property="og:image" content="http://www.underconsideration.com/brandnew/archives/careerbuilder_logo_detail.png" />
-  <meta property="og:url" content="http://127.0.0.1:3000/jobs/<%= @job.id %>/job_detail">
+  <meta property="og:url" content="http://www.careerbuilders.com:3000/jobs/<%= @job.id %>/job_detail">
+  <meta property="og:title" content="<%= @job.JobTitle%>">
+  <meta property="og:description" content="business.business">
+
+  <meta property="og:description" content="<%= @job.JobTitle%>" />
+  <!--<meta property="og:type" content="article">-->
+  <!--<meta name="title" content="First Title">-->
+  <!--<meta name="description" content="First Description">-->
+  <!--<meta property="og:image" content="http://www.underconsideration.com/brandnew/archives/careerbuilder_logo_detail.png" />-->
+  <!--<meta name="description" content="http://127.0.0.1:3000/jobs/<%#= @job.id %>/job_detail">-->
+
 
   <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
 </head>
